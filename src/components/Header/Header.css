@@ -2,10 +2,13 @@
   z-index: 99;
   position: sticky;
   top: 0;
+  border-radius: 120px;
+  backdrop-filter: blur(45px);
 }
+
 .h-container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.563rem;
+  padding-bottom: 0.313rem;
   color: var(--secondary);
   justify-content: space-between;
 }
@@ -13,9 +16,11 @@
 .h-menu {
   gap: 2rem;
 }
-.h-menu > *:hover {
+
+.h-menu>*:hover {
   cursor: pointer;
 }
+
 .menu-icon {
   display: none;
 }
@@ -24,6 +29,7 @@
   .menu-icon {
     display: block;
   }
+
   .h-menu {
     color: var(--black);
     position: absolute;
